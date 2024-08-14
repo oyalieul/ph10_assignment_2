@@ -109,6 +109,42 @@
     color: rgba(255, 255, 255, 0.40);
 }
 
+.run-div{
+    width: 50%;
+}
+
+.run-img{
+    width: 50%;
+    border-radius: 30px;
+}
+
+
+.run-section{
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+.run-margin{
+    margin: 0 50px;
+}
+
+.run-title{
+    font-size: 3.5rem;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.run-description{
+    color: rgba(255, 255, 255, 0.40);
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+
+
+
+
 
 /* --------------------------------------------------- */
 
@@ -126,6 +162,13 @@
 
 .justify-content-between{
     justify-content: space-between;
+}
+
+.justify-content-even{
+    justify-content:space-evenly
+}
+.justify-content-end{
+    justify-content:end;
 }
 
 .p-20{
@@ -164,4 +207,8 @@
 
 .mb-30{
     margin-bottom: 30px;
+}
+
+.mt-80{
+    margin-top: 80px;
 }
