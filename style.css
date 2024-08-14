@@ -1,0 +1,139 @@
+*{
+ margin: 0;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+.title{
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.header-section{
+    color: white ;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(120, 120, 120, 0.238), black);
+}
+
+.banner-title{
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.banner-div{
+    width: 50%;
+    height:100%;
+}
+
+
+
+.banner-discription{
+    color: rgba(255, 255, 255, 0.40);
+    margin-bottom: 30px;
+    width: 75%;
+}
+
+.banner-button-primary{
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    border: orangered 1px solid;
+    margin-right: 10px;
+}
+
+.banner-button-secondary{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+}
+
+.special-font{
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: italic;
+    color: orangered;
+}
+
+.banner-img{
+    height:80%;
+}
+
+.banner-img-div{
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+
+/* main section styles */
+
+    /* habit section */
+
+.habit-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.habit-title{
+    font-size: 2rem;
+}
+
+.habit-description{
+    color: rgba(255, 255, 255, 0.40);
+}
+
+
+
+
+
+
+/* --------------------------------------------------- */
+
+
+
+/* classes */
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.p-20{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.w-80pt{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
