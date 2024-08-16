@@ -7,6 +7,8 @@
     margin: 0;
 }
 
+
+
 .navbar {
     margin-top:30px;
     margin-bottom: 50px;
@@ -126,6 +128,7 @@ ul{
 
 .habit-title {
     font-size: 2rem;
+
 }
 
 .habit-description {
@@ -141,6 +144,10 @@ ul{
 .habit-card-description {
     color: rgba(255, 255, 255, 0.40);
 }
+
+
+/* run */
+
 
 .run-div {
     width: 50%;
@@ -459,4 +466,118 @@ footer a{
 
 .mt-80 {
     margin-top: 80px;
+}
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .navbox{
+        display: none;
+    }    
+
+    .banner{
+        display: block;
+    }
+
+    .banner-div{
+        width: 100%;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .habit-pic-res{
+        display: block;
+    }
+
+    .habit-card{
+        margin-top: 30px;
+    }
+
+    .run-margin{
+        display: block;
+    }
+
+    .run-div{
+        display: block;
+        width: 100%;
+    }
+
+    .run-title{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .run-description{
+        width: 100%;
+    }
+
+
+    .banner-button-primary{
+        margin-bottom:30px;
+        width:100%
+    }
+    .run-img{
+        width: 100%;
+    }
+
+    .bmi-part-1{
+        display: block;
+        width: 100%;
+    }
+
+    .bmi-cal-chart{
+        margin-bottom:30px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .bmi-cal-chart-title{
+        font-size: 1rem;
+    }
+
+    .cal-bmi{
+        padding: 20px;
+    }
+
+    #activity{
+        width:360px
+    }
+
+    .cal-button{
+        width: 100%;
+    }
+
+    .member-container{
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+    }
+    .members{
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item{
+        margin-bottom:20px
+    }
+
+    .banner-button-primary{
+        width: 50%;
+        
+    }
+
+    
+    .b-btn{
+        display: block;
+    }
+
 }
