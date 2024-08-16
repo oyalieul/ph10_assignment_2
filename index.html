@@ -11,14 +11,14 @@
 <body class="inter-font" style="background-color: black; color:white">
     <header class="header-section">
         <div class="w-80pt">
-            <navbar class="d-flex justify-content-between pt-20">
+            <navbar class="d-flex justify-content-between pt-20 navbar">
                 <h3 class="title">Dhaka Gym</h3>
                 <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">About</a></li>
+                    <ul class="nav-container">
+                        <li class="active-button"><a href="">Home</a></li>
+                        <li class="not-active"><a href="">Service</a></li>
+                        <li class="not-active"><a href="">Contact</a></li>
+                        <li class="not-active"><a href="">About</a></li>
                     </ul>
                 </nav>
             </navbar>
@@ -44,9 +44,206 @@
         </div>
     </header>
 
-  
+    <main>
+        <!-- change your habits -->
+        <section class="habit-section">
+            <div class="mt-30 mb-30">
+                <h2 class="habit-title mb-20">Change Your Habits</h2>
+                <p class="habit-description mb-20">Everything starts with developing a good habit. We will help you with
+                    suggesting ways to develop you good habit</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="habit-card">
+                    <img class="habit-card-img" src="/images/habit 1.png" alt="">
+                    <h4 class="habit-card-title mb-20">Movement</h4>
+                    <p class="habit-card-description">We will help you providing with exercises with correct posture. So
+                        that you won't hurt yourself</p>
+                </div>
+                <div class="habit-card">
+                    <img class="habit-card-img" src="/images/habit 2.png" alt="">
+                    <h4 class="habit-card-title mb-20">Time</h4>
+                    <p class="habit-card-description">You have make a habit, set a time period. and work on it</p>
+                </div>
+                <div class="habit-card">
+                    <img class="habit-card-img" src="/images/habit 3.png" alt="">
+                    <h4 class="habit-card-title mb-20">Practice</h4>
+                    <p class="habit-card-description">You have to be regular. That is must. Practice makes a man
+                        perfect.</p>
+                </div>
+                <div class="habit-card">
+                    <img class="habit-card-img" src="/images/habit 4.png" alt="">
+                    <h4 class="habit-card-title mb-20">Weight Loss</h4>
+                    <p class="habit-card-description">If you make habit then you will get a great balanced weight</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Run an Extra Mile Easily -->
+        <section class="w-80pt mt-80 run-section">
+            <div class="d-flex justify-content-even run-margin">
+                <div class="run-div run-div-flex">
+                    <h2 class="run-title">Run an Extra Mile Easily</h2>
+                    <p class="run-description">If you fit then you can work more. Run more. If you can run more than you
+                        can get more fit. Its cycle. If you know, you know. Haha</p>
+                    <button class="banner-button-primary">Join Now</button>
+                </div>
+                <div class="run-div d-flex justify-content-end">
+                    <img class="run-img" src="images/run.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BMI Calculator -->
+        <section class="w-80pt mt-80">
+            <h2 class="bmi-title">BMI Calculator</h2>
+            <p class="bmi-description">Measure your fitness with the BMI index. Provide some input and get the result
+                instantly.</p>
+        </section>
+
+
+        <!-- BMI chart section-->
+        <section class="mt-80 mb-30 bmi-chart-section">
+            <div class="w-80pt d-flex">
+                <!-- bmi calculator chart -->
+                <div class="bmi-cal-chart">
+                    <h3 class="bmi-cal-chart-title">BMI Calculator Chart</h3>
+                    <table>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Below 18.5
+                            </td>
+                            <td>
+                                Underweight
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                18.5- 24.9
+                            </td>
+                            <td>
+                                Healthy
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- cal your bmi -->
+                <div class="cal-bmi">
+                    <h3 class="cal-bmi-title">Calculate your BMI</h3>
+                    <p class="cal-bmi-description">Provide some input and get the result instantly. And know your
+                        progress.
+                        Then act accordingly</p>
+                    <form action="">
+                        <div>
+                            <input class="form-ele-size" type="number" name="" id="" placeholder="Height/cm">
+                            <input class="form-ele-size" type="number" name="" id="" placeholder="Weight/kg">
+                        </div>
+                        <div>
+                            <input class="form-ele-size" type="number" name="" id="" placeholder="Height/cm">
+                            <select class="form-ele-size" name="" id="sex">
+                                <option value="select">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="prefer-not-ay">Prefer not to Say</option>
+                            </select>
+                        </div>
+                        <select name="" id="activity">
+                            <option value="select">Select activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="somewhat-active">Somewhat Active</option>
+                            <option value="average">Average</option>
+                            <option value="above-average-1h-pd">Above Average 1 hr per day</option>
+                        </select>
+                        <div>
+                            <button class="cal-button">Calculate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet our team -->
+
+        <section class="meet-section">
+            <div style="margin-bottom: 70px;">
+                <h2 class="meet-title">Meet Our Team</h2>
+                <p class="meet-description">Meet our team member. All are the experts and waiting for you to help to
+                    build a fitness</p>
+            </div>
+
+            <div class="w-80pt d-flex justify-content-center member">
+                <div class="member-container">
+                    <div id="member-1" class="members">
+                        <h2>Jerome Bell</h5>
+                            <p>Trainer</p>
+                    </div>
+                    <div id="member-2" class="members">
+                        <h2>Cameron John</h5>
+                            <p>Trainer</p>
+                    </div>
+                    <div id="member-3" class="members">
+                        <h2>Darrell John</h5>
+                            <p>Trainer</p>
+                    </div>
+                    <div id="member-4" class="members">
+                        <h2>Dianne Russell</h5>
+                            <p>Trainer</p>
+                    </div>
+                    <div id="member-5" class="members">
+                        <h2>Cody Fisher</h5>
+                            <p>Trainer</p>
+                    </div>
+                    <div id="member-6" class="members">
+                        <h2>Theresa Webb</h5>
+                            <p>Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <footer>
+        <div class="w-80pt footer-container">
+            <div>
+                <h1 class="footer-title">Dhaka Gym</h1>
+                <p class="footer-description">We are waiting for you with our best service and experience. Our experts
+                    are ready train you for the best fitness you can ever have. So why to late. Contact Now, and Join us
+                </p>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 50px;">Get Started</h2>
+                <a href="">Service</a>
+                <a href="">Contact us</a>
+                <a href="">Affiliated Program</a>
+                <a href="">About us</a>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 50px;">Contact Info</h2>
+                <p style="color: rgba(255, 255, 255, 0.40); margin: 10px 0">Phone no: 01700-000000</p>
+                <p style="color: rgba(255, 255, 255, 0.40); margin: 10px 0">Email: info@dhaka-gym.com</p>
+                <p style="color: rgba(255, 255, 255, 0.40); margin: 10px 0">Address: Dhaka</p>
+            </div>
+        </div>
+
+        <div class="w-80pt ">
+            <hr class="mb-20 mt-20">
+            <p style="text-align: center;color: rgba(255, 255, 255, 0.40);">All rights reserved by @oyalieul</p>
+        </div>
+    </footer>
 </body>
 
 </html>

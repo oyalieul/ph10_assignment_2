@@ -1,15 +1,21 @@
-*{
- margin: 0;   
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
 
-.title{
+
+* {
+    margin: 0;
+}
+
+.navbar {
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+
+.title {
     color: orangered;
     font-size: 1.5rem;
+    padding: 10px;
 }
 
 .inter-font {
@@ -17,34 +23,61 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-
-
-.header-section{
-    color: white ;
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(120, 120, 120, 0.238), black);
 }
 
-.banner-title{
+
+.header-section {
+    color: white;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(120, 120, 120, 0.238), black);
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 50px;
+    padding: 10px 80px;
+}
+
+.nav-container a{
+    color: white;
+    margin:0 30px;
+    text-decoration: none;
+}
+
+.active-button{
+    background-color: orangered;
+    padding: 10px 0;
+    border-radius: 20px; 
+}
+
+.not-active{
+    padding: 10px 0;
+}
+
+
+
+.banner-title {
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-.banner-div{
+.banner-div {
     width: 50%;
-    height:100%;
+    height: 100%;
 }
 
 
 
-.banner-discription{
+.banner-discription {
     color: rgba(255, 255, 255, 0.40);
     margin-bottom: 30px;
     width: 75%;
 }
 
-.banner-button-primary{
+.banner-button-primary {
     background-color: orangered;
     padding: 10px 20px;
     border-radius: 20px;
@@ -53,7 +86,7 @@
     margin-right: 10px;
 }
 
-.banner-button-secondary{
+.banner-button-secondary {
     padding: 10px 20px;
     border-radius: 20px;
     background-color: black;
@@ -61,18 +94,18 @@
     border: white 1px solid;
 }
 
-.special-font{
+.special-font {
     font-family: "Grey Qo", cursive;
     font-weight: 400;
     font-style: italic;
     color: orangered;
 }
 
-.banner-img{
-    height:80%;
+.banner-img {
+    height: 80%;
 }
 
-.banner-img-div{
+.banner-img-div {
     justify-content: center;
     align-items: end;
 }
@@ -82,103 +115,318 @@
 
 /* main section styles */
 
-    /* habit section */
+/* habit section */
 
-.habit-section{
+.habit-section {
     width: 80%;
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
 }
 
-.habit-title{
+.habit-title {
     font-size: 2rem;
 }
 
-.habit-description{
+.habit-description {
     color: rgba(255, 255, 255, 0.40);
-    
+
 }
 
-.habit-card-img{
+.habit-card-img {
     border-radius: 50%;
     margin-bottom: 30px;
 }
 
-.habit-card-description{
+.habit-card-description {
     color: rgba(255, 255, 255, 0.40);
 }
 
-.run-div{
+.run-div {
     width: 50%;
 }
 
-.run-img{
+.run-img {
     width: 50%;
     border-radius: 30px;
 }
 
 
-.run-section{
-    background-color: rgb(41, 41, 41);
+.run-section {
+    background-color: #222222;
     border-radius: 10px;
     padding: 40px 0;
 }
 
-.run-margin{
+.run-margin {
     margin: 0 50px;
 }
 
-.run-title{
+.run-title {
     font-size: 3.5rem;
     width: 50%;
     margin-bottom: 30px;
 }
 
-.run-description{
+.run-description {
     color: rgba(255, 255, 255, 0.40);
     margin-bottom: 30px;
     width: 50%;
 }
 
+/* BMI Calculator */
+
+.bmi-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.bmi-description{
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+}
+
+/* bmi chart section */
+
+
+.bmi-chart-section {
+    background-color: #222222;
+    padding: 70px 0;
+}
+
+.bmi-cal-chart-title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+th{
+    text-align: start;
+}
+
+table, th, td {
+    border: 1px solid rgb(78, 78, 78);
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 8px 30PX;
+}
+
+td{
+    color: rgb(129, 129, 129);
+}
+
+/* BMI calculator chart */
+
+.bmi-cal-chart {
+    width: 25%;
+    padding: 0 0 0 100px;
+}
+
+/* calculate you bmi */
+
+.cal-bmi {
+    padding: 0 0 0 100px;
+}
+
+.cal-bmi-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cal-bmi-description{
+    color: rgba(255, 255, 255, 0.40);
+    margin-bottom: 40px;
+}
+
+/* form style */
+
+.form-ele-size{
+    width : 300px
+    ; padding: 15px 30px
+    ; border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+    border: none;
+}
+
+form ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1; /* Firefox */
+  }
+
+#sex{
+    width: 360px;
+} 
+
+#activity{
+    width : 725px
+    ; padding: 15px 30px
+    ; border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+    border: none;
+}
+
+
+.cal-button{
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    border: orangered 1px solid;  
+    width: 200px;  
+}
+  
+/* team section */
+
+.meet-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.meet-description{
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+}
 
 
 
 
+/* team member pictures grid */
+
+.member-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    background-color:rgb(255, 255, 255,0.1) ;
+    padding: 35px 30px;
+    border-radius: 20px;
+}
+
+.members{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    /* color: black; */
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+#member-1{
+    background-image: url('images/trainer1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#member-2{
+    background-image: url('images/trainer2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#member-3{
+    background-image: url('images/trainer3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#member-4{
+    background-image: url('images/trainer4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#member-5{
+    background-image: url('images/trainer5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#member-6{
+    background-image: url('images/trainer6.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: #222222;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+.footer-title{
+    font-size:4rem;
+    color:orangered;
+    margin-bottom: 10px;
+}
+
+
+.footer-description{
+    color: rgba(255, 255, 255, 0.40);
+    width: 50%;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.40);
+    text-decoration: none;
+    display: block;
+    margin:10px 0 ;
+
+}
 
 /* --------------------------------------------------- */
 
 
 
 /* classes */
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
 
-.justify-content-between{
+.justify-content-between {
     justify-content: space-between;
 }
 
-.justify-content-even{
-    justify-content:space-evenly
-}
-.justify-content-end{
-    justify-content:end;
+.justify-content-even {
+    justify-content: space-evenly
 }
 
-.p-20{
+.justify-content-end {
+    justify-content: end;
+}
+
+.p-20 {
     padding-left: 50px;
     padding-right: 50px;
 }
 
 
 
-.w-80pt{
+.w-80pt {
     width: 80%;
     margin: 0 auto;
 }
@@ -186,29 +434,29 @@
 
 /* padding */
 
-.pt-20{
+.pt-20 {
     padding-top: 20px;
 }
 
 
 /* margin */
 
-.mt-20{
+.mt-20 {
     margin-top: 20px;
 }
 
-.mb-20{
+.mb-20 {
     margin-bottom: 20px;
 }
 
-.mt-30{
+.mt-30 {
     margin-top: 30px;
 }
 
-.mb-30{
+.mb-30 {
     margin-bottom: 30px;
 }
 
-.mt-80{
+.mt-80 {
     margin-top: 80px;
 }
